@@ -39,7 +39,7 @@
     /* PROBLEM 4
       Use the least specific selector to change the first paragraph to red.
       */
-    p * {
+    p {
       color: red;
     }
 
@@ -47,14 +47,15 @@
       Somehow we are unable to change the color of the span to green. Why? What can you do to fix that?
       */
     span {
-      color: green;
+      color: green !important;
+      /* added important */
     }
   </style>
 </head>
 
 <body>
   <h1>TITLE</h1>
-  <span>Span inside body</span> <!-- removed inline styling -->
+  <span style="color: black">Span inside body</span>
   <p>Paragraph 1 inside body</p>
   <div>
     <p id="div-text">Text inside div</p> <!-- added p tag and ID -->
