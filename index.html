@@ -31,7 +31,10 @@
     /* PROBLEM 3
       Add code to change the 'text inside div'. and only it, to 36px.
       */
-    /* ENTER YOUR CODE HERE */
+    #div-text {
+      /* added ID to 'text inside div' */
+      font-size: 36px;
+    }
 
     /* PROBLEM 4
       Use the least specific selector to change the first paragraph to red.
@@ -52,7 +55,7 @@
   <span style="color: black">Span inside body</span>
   <p>Paragraph 1 inside body</p>
   <div>
-    Text inside div
+    <p id="div-text">Text inside div</p> <!-- added p tag and ID -->
     <p>Paragraph 2 inside div</p>
     <p class="warning">Warning in paragraph 3 inside div</p>
   </div>
